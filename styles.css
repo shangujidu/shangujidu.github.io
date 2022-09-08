@@ -1,0 +1,47 @@
+body {
+    background: #ffffff;
+}
+
+p {
+    color: #1b457b;
+    font-family: 'Franklin Gothic Medium'
+}
+
+ul {
+    font-family: 'Franklin Gothic Medium';
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gainsboro;
+}
+
+li {
+    float: right;
+    list-style: none;
+}
+
+li a {
+    display: block;
+    color: #1b457b;
+    text-align: center;
+    padding: 18px 14px;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+li a:hover {
+    background-color: #e8e8e8;
+}
+
+.name {
+    float: left;
+    color: #1b457b;
+    font-family: Impact;
+    font-weight: 500;
+    font-size: 250%;
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 2px;
+    background-color: gainsboro;
+}
+
