@@ -4,11 +4,11 @@ body {
 
 p {
     color: #1b457b;
-    font-family: 'Franklin Gothic Medium'
+    font-family: 'Franklin Gothic';
 }
 
 ul {
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Avenir Next';
     margin: 0;
     padding: 0;
     overflow: hidden;
