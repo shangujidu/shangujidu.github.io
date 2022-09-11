@@ -1,8 +1,0 @@
-<li><a href="freshman.html">freshman</a></li>
-<li><a href="sophomore.html">sophomore</a></li>
-<li><a href="junior.html">junior</a></li>
-<li><a href="senior.html">senior</a></li>
-
-#f4f4f4 lighter gray
-#e8e8e8 slightly darker
-gainsbro even darker
