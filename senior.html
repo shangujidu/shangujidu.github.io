@@ -12,35 +12,51 @@
             <ul>
                 <!--<li><a href="all.html">general</a></li>-->
                 <li><a href="index.html">general</a></li>
-                <li><a href="senior.html">senior</a></li>
+                <li><a class="active" href="senior.html">senior</a></li>
                 <li><a href="junior.html">junior</a></li>
                 <li><a href="sophomore.html">sophomore</a></li>
                 <li><a href="freshman.html">freshman</a></li>
                 <li class="name">ShanGu Complaints</li>
-                <!--<hr>-->
             </ul>
         </div>
-        <h2>
-            senior
-        </h2>
         <p></p>
         <div class="textbox">
             <form>
                 
             </form>
         </div>
-        <div class="textbox">
-            <form method="post" enctype="multipart/form-data">
-                <textarea class="text" placeholder="type something..." rows="6" cols="20"></textarea>
-            </form>
-            <form method="name" enctype="multipart/form-data">
-                <textarea class="user" placeholder="enter your name..." rows="1" cols="20"></textarea>
-            </form>
-            <form>
-                <input type="checkbox" value="anon">
-                <label>anonymous</label>
-            </form>
-            <button class="post">post</button>
+        <form id="message" enctype="multipart/form-data">
+            <textarea class="text" id="textbox" placeholder="type something..." rows="6" cols="20"></textarea><br>
+            <textarea class="user" id="name" placeholder="enter your name..." rows="1" cols="20"></textarea><br>
+        </form>
+        <form>
+            <input type="checkbox" onclick="checkbox()" id="anon">
+            <span id="msg">anonymous</span>
+        </form>
+        <div id="button">
+            <button onclick="output()">submit</button><br>
         </div>
+        <p id="demo"></p>
+
+        <script>
+            function checkbox() {
+                var checked = false;
+                if (document.querySelector('#anon:checked')) {
+                    checked = true;
+                }
+                //document.getElementById('msg').innerText = checked;
+                return checked;
+            }
+            function output() {
+                var x = document.getElementById("message").elements[0].value;
+                var y = document.getElementById("message").elements[1].value;
+                if(checkbox()==false){
+                    document.getElementById("demo").innerHTML = x + "<br>--" + y;
+                }
+                else{
+                    document.getElementById("demo").innerHTML = x + "<br>--anonymous";
+                }
+            }
+        </script>
     </body>
 </html>
