@@ -9,6 +9,7 @@ p {
 
 ul {
     font-family: 'Avenir Next';
+    font-weight: 500;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -29,6 +30,10 @@ li a {
     font-size: 110%;
 }
 
+.active{
+    background-color: #cfcfcf;
+}
+
 li a:hover {
     background-color: #e8e8e8;
 }
@@ -45,3 +50,23 @@ li a:hover {
     background-color: gainsboro;
 }
 
+h2 {
+    font-family: 'Avenir Next';
+}
+
+#msg{
+    font-family: 'Avenir Next';
+    padding: 5px;
+}
+
+#button{
+    padding: 3px;
+}
+
+button{
+    font-family: 'Avenir Next';
+}
+
+#message{
+    padding-left: 3px;;
+}
